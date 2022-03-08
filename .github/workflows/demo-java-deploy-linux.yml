@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "demo-java-webapp-iac-maif"
+          app-name: "demo-java-webapp-stan"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DEMO_JAVA }}
           package: "*.jar"
